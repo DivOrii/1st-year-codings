@@ -1,0 +1,56 @@
+
+package moew11;
+
+import java.util.Scanner;
+
+public class Moew11 {
+
+      public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+          System.out.println("Hello User!! ");
+           System.out.println();
+            
+         
+          Printbalon(0);
+          
+          
+          System.out.println();
+          System.out.println();
+          System.out.println();
+          System.out.println();
+          
+          
+          
+          
+      }
+          
+        
+         static void Printbalon(int balon){
+      System.out.println(balon);
+      if (balon>=10 && balon<=100){
+      System.out.println("patay naka");
+      }
+      else if(balon>=101 && balon<500) {
+          System.out.println("budgetay jud ka");
+      }
+      
+      else if (balon>=501){
+          System.out.println("WOWWWWWWWWWWWWWWW");
+            }
+      else {
+      System.out.println("pubre");
+      }
+      
+      }
+          
+              
+      
+     
+      }
+          
+        
+     
+        
+      
+
