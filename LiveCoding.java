@@ -1,8 +1,8 @@
 public class LiveCoding {
     public static void main(String[] args) {
 
-
-
+// ASSIGNMENT BY:  Reyes, Cristina Marie B.
+        
         System.out.println("Problem 1: Odd or Even");
         System.out.println();
         System.out.println(checkOddEven(2));
