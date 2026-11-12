@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+
+// Recursive Euclidean algorithm to Calculate the GCD
+    public static int GreatestCommonDivisor(int firstnumber, int secondnumber) {
+// Base case
+        if (secondnumber == 0) {
+            return firstnumber;
+        }
+
+// Recursive case
+        return GreatestCommonDivisor(secondnumber, firstnumber % secondnumber);
+    }
+
+    public static void main(String[] args) {
+    
+      // Predefined input numbers
+        int firstnumber = 48;
+        int secondnumber = 18;
+
+        if (firstnumber < 0 || secondnumber < 0) {
+            System.out.println("Invalid Input, please try again.");
+        } else if (firstnumber == 0 && secondnumber == 0) {
+            System.out.println("Undefined");
+        } else {
+            System.out.println(GreatestCommonDivisor(firstnumber, secondnumber));
+        }
+
+    }
+
+}
