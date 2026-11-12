@@ -30,3 +30,44 @@ public class Main {
     }
 
 }
+
+
+
+
+
+import java.util.Scanner;
+
+public class Reyes_Problem2 {
+
+    public static int GCD(int Firstnumber, int Secondnumber) {
+
+        
+        
+        if (Secondnumber == 0) {
+            return Firstnumber;
+        }
+
+        return GCD(Secondnumber, Firstnumber % Secondnumber);
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        input.useDelimiter("[^0-9-]");
+
+      
+        int Firstnumber = input.nextInt();
+        int Secondnumber = input.nextInt();
+
+        if (Firstnumber < 0 || Secondnumber < 0) {
+            System.out.println("Invalid Input, please try again.");
+        } else if (Firstnumber == 0 && Secondnumber == 0) {
+            System.out.println("Undefied");
+        } else {
+            System.out.println("GCD: " + GCD(Firstnumber, Secondnumber));
+        }
+
+        input.close();
+    
+    }
+}
