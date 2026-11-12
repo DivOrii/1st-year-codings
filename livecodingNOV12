@@ -1,4 +1,4 @@
-
+// PROBLEM 1
 import java.util.Scanner;
 
 public class Reyes_Problem1 {
@@ -25,3 +25,48 @@ public class Reyes_Problem1 {
         return (number % 10) + sumOfDigits(number / 10);
     }
 }
+
+
+// PROBLEM 2
+import java.util.Scanner;
+
+public class test Reyes_Problem2 {
+
+    // Method to calculate the Greatest Common Divisor using recursion
+    public static int GCD(int firstInputNumber, int secondInputNumber) {
+
+        // Base case: return the first number when the second number is zero
+        if (secondInputNumber == 0) {
+            return firstInputNumber;
+        }
+
+        // Recursive case: repeat using the remainder
+        return GCD(secondInputNumber, firstInputNumber % secondInputNumber);
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Read numbers separated by non-numeric characters
+        input.useDelimiter("[^0-9-]");
+
+        int firstInputNumber = input.nextInt();
+        int secondInputNumber = input.nextInt();
+
+        // Check if both numbers are zero
+        if (firstInputNumber == 0 && secondInputNumber == 0) {
+            System.out.println("Undefied");
+        } else {
+            // Display the calculated GCD
+            System.out.println(GCD(firstInputNumber, secondInputNumber));
+        }
+
+        input.close();
+    }
+}
+
+ // PROBLEM 3
+
+Nakatulog na ang codeCheker nimu sir, HUHUUU
+
+ 
